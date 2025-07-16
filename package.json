@@ -1,0 +1,16 @@
+{
+  "name": "frontend-framework",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "Yebin Pak",
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "license": "ISC",
+  "description": ""
+}
