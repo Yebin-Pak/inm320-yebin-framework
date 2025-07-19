@@ -6,6 +6,11 @@ body {
 }
 
 
+/* header */
+header {
+  height: 106px;
+}
+
 /* side bar */
 #side-bar {
     height: 100%;
@@ -50,7 +55,6 @@ body {
 
 /* nav bar */
 .navbar {
-    position: fixed;
     margin-left: 255px;
     padding: 30px;
 }
@@ -92,4 +96,11 @@ body {
     letter-spacing: 0.2px;
     text-align: right;
 
+}
+
+
+/* main */
+main {
+    margin-left: 255px;
+    padding: 30px;
 }
