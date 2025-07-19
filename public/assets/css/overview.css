@@ -63,3 +63,24 @@ body {
 
     color: #252733;
 }
+
+.navbar-nav > li > a {
+    color: #C5C7CD;
+}
+
+.navbar-nav > li > a > picture > img::after {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    border: 1.5px solid #DFE0EB;
+}
+
+#user-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: right;
+
+}
