@@ -36,3 +36,91 @@ h5 {
     text-align: left;
     color: #252733;
 }
+
+.fa-arrow-up-wide-short,
+.fa-filter {
+    margin-left: 34px;
+    margin-right: 5px;
+
+    font-size: 12px;
+    color: #C5C7CD;
+}
+
+#tickets-title > div > p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #4B506D;
+}
+
+.chart-head {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.2px;
+    color: #9FA2B4;
+}
+
+.profile-picture {
+    margin-right: 24px;
+    border-radius: 22px;
+}
+
+.tickets-list span {
+    margin-bottom: 4px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #252733;
+}
+
+.tickets-list p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #C5C7CD;
+}
+
+.priority {
+    height: 24px;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.priority > p {
+    margin: 0;
+    color: white;
+}
+
+.priority-high {
+    width: 54px;
+    background-color: #F12B2C;
+}
+
+.priority-normal {
+    width: 76px;
+    background-color: #29CC97;
+}
+
+.priority-low {
+    width: 52px;
+    background-color: #FEC400;
+}
+
+.fa-ellipsis-vertical {
+    font-size: 16px;
+    color: #C5C7CD;
+}
