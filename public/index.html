@@ -54,10 +54,23 @@
             <!-- today's trend -->
             <section id="today-trend" class="container-fluid text-center">
                 <div class="row m-0 p-0" style="height: 546px;">
-                    <div class="col-8 d-flex justify-content-center align-items-center">
+                    <div class="col-8 d-flex flex-column justify-content-center">
                         <h5>Today's trends</h5>
-                        <p>as of 25 May 2019, 09:41 PM</p>
-                        <canvas id="line-chart" style="width:100%;max-width:700px"></canvas>
+                        <div class="d-flex justify-content-between align-items-center mt-1">
+                            <p class="m-0">as of 25 May 2019, 09:41 PM</p>
+                            <div>
+                                <svg width="24" height="4">
+                                    <line x1="0" y1="0" x2="16" y2="0" stroke="#3751FF" stroke-width="4" stroke-linecap="round"/>
+                                </svg>
+                                <span>Today</span>
+
+                                <svg width="24" height="4">
+                                    <line x1="0" y1="0" x2="16" y2="0" stroke="#DFE0EB" stroke-width="4" stroke-linecap="round"/>
+                                </svg>
+                                <span>Yesterday</span>
+                            </div>
+                        </div>
+                        <canvas id="line-chart" class="mt-4" style="width:100%; max-width:1000px; height: 380px; max-height: 380px;"></canvas>
                     </div>
                     <div class="col-4 p-0">
                         <div class="d-flex flex-column justify-content-center align-items-center">

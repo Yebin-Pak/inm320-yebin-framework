@@ -5,7 +5,7 @@ window.onload = function () {
     const ctx = document.getElementById("line-chart").getContext("2d");
 
     // background gradient
-    const gradient = ctx.createLinearGradient(0, 0, ctx.canvas.width, 0);
+    const gradient = ctx.createLinearGradient(0, 0, 700, 0);
     gradient.addColorStop(0.0147, "rgba(55, 81, 255, 0.15)");
     gradient.addColorStop(0.9674, "rgba(55, 81, 255, 0)");
 
@@ -25,8 +25,8 @@ window.onload = function () {
                     fill: true,
                     tension: 0.4,
 
-                    pointBackgroundColor: "rgba(255, 255, 255, 0)",
-                    pointBorderColor: "rgba(255, 255, 255, 0)",
+                    pointBackgroundColor: "transparent",
+                    pointBorderColor: "transparent",
                     pointHoverRadius: 6,
                     pointHoverBackgroundColor: "white",
                     pointHoverBorderColor: "#3751FF",
@@ -44,6 +44,10 @@ window.onload = function () {
                     pointHoverRadius: 0
                 }
             ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false
         }
     });
 };
