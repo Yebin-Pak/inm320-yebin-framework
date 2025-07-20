@@ -1,4 +1,6 @@
 /* main */
+
+/* statistics */
 .col-3 {
     background-color: white;
     border: 1px solid #DFE0EB;
@@ -49,6 +51,8 @@
     background-color: white;
     border: 1px solid #DFE0EB;
     border-radius: 8px;
+    padding: 0;
+    margin: 30px auto;
 }
 
 .line-chart {
@@ -63,7 +67,8 @@
     margin: 0;
     border-bottom: 1px solid #DFE0EB;
 
-    width: 342px;
+    width: 100%;
+    height: calc(546px / 5);
 }
 
 .col-4 > div > h4 {
