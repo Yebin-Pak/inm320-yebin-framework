@@ -31,25 +31,25 @@ let headerContent = `
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link d-flex flex-row justify-content-center align-items-center" style="width: 100%; height: 56px;" aria-current="page">
+                        <a href="" class="nav-link d-flex flex-row justify-content-center align-items-center" style="width: 100%; height: 56px;" aria-current="page">
                             <i class="fa-solid fa-lightbulb me-4" style="font-size: 16px;"></i>
                             <span class="m-0" style="width: 159px; height: 20px;">Ideas</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link d-flex flex-row justify-content-center align-items-center" style="width: 100%; height: 56px;" aria-current="page">
+                        <a href="" class="nav-link d-flex flex-row justify-content-center align-items-center" style="width: 100%; height: 56px;" aria-current="page">
                             <i class="fa-solid fa-user-group me-4" style="font-size: 16px;"></i>
                             <span class="m-0" style="width: 159px; height: 20px;">Contacts</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link d-flex flex-row justify-content-center align-items-center" style="width: 100%; height: 56px;" aria-current="page">
+                        <a href="" class="nav-link d-flex flex-row justify-content-center align-items-center" style="width: 100%; height: 56px;" aria-current="page">
                             <i class="fa-solid fa-user-tie me-4" style="font-size: 16px;"></i>
                             <span class="m-0" style="width: 159px; height: 20px;">Agents</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link d-flex flex-row justify-content-center align-items-center" style="width: 100%; height: 56px;" aria-current="page">
+                        <a href="" class="nav-link d-flex flex-row justify-content-center align-items-center" style="width: 100%; height: 56px;" aria-current="page">
                             <i class="fa-solid fa-book me-4" style="font-size: 16px;"></i>
                             <span class="m-0" style="width: 159px; height: 20px;">Articles</span>
                         </a>
@@ -58,13 +58,13 @@ let headerContent = `
                     <hr>
 
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link d-flex flex-row justify-content-center align-items-center" style="width: 100%; height: 56px;" aria-current="page">
+                        <a href="" class="nav-link d-flex flex-row justify-content-center align-items-center" style="width: 100%; height: 56px;" aria-current="page">
                             <i class="fa-solid fa-gear me-4" style="font-size: 15px;"></i>
                             <span class="m-0" style="width: 159px; height: 20px;">Settings</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link d-flex flex-row justify-content-center align-items-center" style="width: 100%; height: 56px;" aria-current="page">
+                        <a href="" class="nav-link d-flex flex-row justify-content-center align-items-center" style="width: 100%; height: 56px;" aria-current="page">
                             <i class="fa-solid fa-award me-4" style="font-size: 15px;"></i>
                             <span class="m-0" style="width: 159px; height: 20px;">Subscription</span>
                         </a>
@@ -108,3 +108,27 @@ let headerContent = `
 let siteHeader = document.getElementById("site-header");
 
 siteHeader.innerHTML = headerContent;
+
+
+// nav-link active
+window.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+            // Get all sidebar nav links
+            const navLinks = document.querySelectorAll('#side-bar .nav-link');
+
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+
+                // Normalize: handle "./tickets.html" vs "tickets.html"
+                const normalizedHref = href.replace('./', '');
+
+                if (normalizedHref === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }, 0);
+    });

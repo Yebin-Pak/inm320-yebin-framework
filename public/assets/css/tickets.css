@@ -1,0 +1,10 @@
+/* nav bar */
+.navbar-brand {
+    visibility: hidden;
+}
+
+.navbar-brand::after {
+    content: 'Tickets';
+    visibility: visible;
+    margin-left: -110px;
+}

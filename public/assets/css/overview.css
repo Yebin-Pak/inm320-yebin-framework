@@ -90,6 +90,8 @@
 }
 
 .col-4 > div > p {
+    margin: 0;
+
     font-weight: 700;
     font-size: 24px;
     line-height: 100%;
@@ -104,5 +106,71 @@
     background-color: white;
     border: 1px solid #DFE0EB;
     border-radius: 8px;
+    padding: 32px;
+    padding-bottom: 0;
 }
 
+#unresolved-tickets > hr,
+#task > hr {
+    background-color: #DFE0EB;
+    width: calc(100% + 64px);
+    height: 1px;
+    margin: 0;
+    margin-left: -32px;
+}
+
+#title-title > h5 {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 100%;
+    letter-spacing: 0.4px;
+    color: #252733;
+}
+
+#title-title > button,
+#task > button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: right;
+    text-decoration: none;
+    color: #3751FF;
+}
+
+#title-group > p,
+#task > p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #9FA2B4;
+}
+
+#title-group > p > span {
+    font-weight: 600;
+    line-height: 100%;
+    color: #4B506D;
+}
+
+.tickets-content {
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.tickets-content > p {
+    margin: 0;
+    color: #252733;
+}
+
+.tickets-content > span {
+    text-align: right;
+    color: #9FA2B4;
+}
