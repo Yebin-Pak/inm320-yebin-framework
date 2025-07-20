@@ -7,6 +7,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    transition: all 0.2s ease-in-out;
 }
 
 .col-3 > h3 {
@@ -17,6 +19,8 @@
     line-height: 100%;
     letter-spacing: 0.4px;
     color: #9FA2B4;
+
+    transition: all 0.2s ease-in-out;
 }
 
 .col-3 > p {
@@ -26,5 +30,57 @@
     font-size: 40px;
     line-height: 100%;
     letter-spacing: 1px;
+    color: #252733;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.col-3:hover {
+    border: 1px solid #3751FF;
+}
+
+.col-3:hover .child {
+    color: #3751FF;
+}
+
+
+/* today's trend */
+#today-trend {
+    background-color: white;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+}
+
+.line-chart {
+    z-index: 5;
+}
+
+.col-8 {
+    border-right: 1px solid #DFE0EB;
+}
+
+.col-4 > div {
+    margin: 0;
+    border-bottom: 1px solid #DFE0EB;
+
+    width: 342px;
+}
+
+.col-4 > div > h4 {
+    margin-bottom: 6px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #9FA2B4;
+}
+
+.col-4 > div > p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.3px;
     color: #252733;
 }
