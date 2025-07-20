@@ -8,3 +8,31 @@
     visibility: visible;
     margin-left: -110px;
 }
+
+
+/* main */
+
+/* all tickets */
+#all-tickets {
+    background-color: white;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+    padding: 0 32px;
+}
+
+#all-tickets > hr {
+    background-color: #DFE0EB;
+    width: calc(100% + 64px);
+    height: 1.5px;
+    margin: 0;
+    margin-left: -32px;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 100%;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #252733;
+}
