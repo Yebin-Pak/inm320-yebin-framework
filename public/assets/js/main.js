@@ -2,28 +2,50 @@
 // line chart
 
 window.onload = function () {
-    const xValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
+    const ctx = document.getElementById("line-chart").getContext("2d");
 
+    // background gradient
+    const gradient = ctx.createLinearGradient(0, 0, ctx.canvas.width, 0);
+    gradient.addColorStop(0.0147, "rgba(55, 81, 255, 0.15)");
+    gradient.addColorStop(0.9674, "rgba(55, 81, 255, 0)");
+
+    const xValues = Array.from({ length: 23 }, (_, i) => i);
+    
     new Chart("line-chart", {
-    type: "line",
-    data: {
-        labels: xValues,
-        datasets: [
-        {
-            data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
-            borderColor: "red",
-            fill: false
-        },
-        {
-            data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
-            borderColor: "green",
-            fill: false
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [
+                {
+                    label: "Today",
+                    data: [15, 22, 27, 29, 29, 28.5, 32.5, 44, 50.5, 39, 26, 19, 18, 24, 36, 44, 48, 46.5, 41.5, 38],
+                    borderColor: "#3751FF",
+                    borderWidth: 2,
+                    backgroundColor: gradient, // use the gradient here
+                    fill: true,
+                    tension: 0.4,
+
+                    pointBackgroundColor: "rgba(255, 255, 255, 0)",
+                    pointBorderColor: "rgba(255, 255, 255, 0)",
+                    pointHoverRadius: 6,
+                    pointHoverBackgroundColor: "white",
+                    pointHoverBorderColor: "#3751FF",
+                    pointHoverBorderWidth: 6
+                },
+                {
+                    label: "Yesterday",
+                    data: [33, 34, 32, 26.5, 23, 23, 26, 31.5, 34, 34, 31, 25, 19, 16.5, 22, 36, 36, 29, 31, 35],
+                    borderColor: "#DFE0EB",
+                    borderWidth: 2,
+                    fill: false,
+                    tension: 0.4,
+
+                    pointRadius: 0,
+                    pointHoverRadius: 0
+                }
+            ]
         }
-        ]
-    },
-    options: {
-        legend: { display: false }
-    }
     });
 };
+
 

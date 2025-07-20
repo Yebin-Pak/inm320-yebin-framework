@@ -71,6 +71,14 @@
     border-right: 1px solid #DFE0EB;
 }
 
+.col-8 > p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #9FA2B4;
+}
+
 .col-4 > div {
     margin: 0;
     border-bottom: 1px solid #DFE0EB;
@@ -120,7 +128,7 @@
     margin-left: -32px;
 }
 
-#title-title > h5 {
+h5 {
     font-weight: 700;
     font-size: 19px;
     line-height: 100%;
