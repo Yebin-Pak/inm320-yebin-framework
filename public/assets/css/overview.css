@@ -46,6 +46,7 @@
 
 #statistics > div > .col:hover {
     border: 1px solid #3751FF;
+    cursor: pointer;
 }
 
 #statistics > div > .col:hover .child {
@@ -111,7 +112,7 @@
 }
 
 #unresolved-tickets > hr,
-#task > hr {
+#tasks > hr {
     background-color: #DFE0EB;
     width: calc(100% + 64px);
     height: 1px;
@@ -153,7 +154,8 @@
     color: #4B506D;
 }
 
-.tickets-content {
+.tickets-content,
+.tasks-content {
     height: 58px;
     display: flex;
     justify-content: space-between;
@@ -173,4 +175,82 @@
 .tickets-content > span {
     text-align: right;
     color: #9FA2B4;
+}
+
+.tasks-content > button {
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    background-color: #F0F1F7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #9FA2B4;
+}
+
+.tasks-content > p {
+    margin: 0;
+    color: #C5C7CD;
+}
+
+#create-btn {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.form-check {
+    margin: 0;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#tasks-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 2px solid #C5C7CD;
+    margin-right: 16px;
+    margin-bottom: 2px;
+}
+
+#tasks-check:checked {
+    background-color: #3751FF;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.form-check-label {
+    margin: 0;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #252733;
+}
+
+#urgent-btn {
+    width: 74px;
+    background-color: #FEC400;
+    color: white;
+}
+
+#new-btn {
+    width: 54px;
+    background-color: #29CC97;
+    color: white;
+}
+
+#default-btn {
+    width: 76px;
 }
