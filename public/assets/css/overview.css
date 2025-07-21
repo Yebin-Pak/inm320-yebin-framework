@@ -5,6 +5,12 @@
 @media screen and (min-width: 650px) {
 
     /* main */
+    main {
+        width: calc(100% - 255px);
+        margin-left: 255px;
+        padding: 30px;
+    }
+
     .container {
         margin: 0;
     }
@@ -14,6 +20,10 @@
     }
 
     /* statistics */
+    #statistics > div {
+        height: 134px; gap: 30px;
+    }
+
     #statistics > div > .col {
         background-color: white;
         border: 1px solid #DFE0EB;
@@ -69,6 +79,10 @@
         margin: 30px auto;
     }
 
+    #today-trend > div {
+        height: 546px;
+    }
+
     .col-8 {
         border-right: 1px solid #DFE0EB;
         padding: 32px;
@@ -81,17 +95,31 @@
         letter-spacing: 0.1px;
         color: #9FA2B4;
     }
+    
+    #line-chart-legend {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-    .col-8 > div > div > svg {
+    #line-chart-legend > svg {
+        margin: auto 0;
         margin-left: 32px;
     }
 
-    .col-8 > div > div > span {
+    #line-chart-legend > span {
         font-weight: 600;
         font-size: 12px;
         line-height: 100%;
         letter-spacing: 0.1px;
         color: #9FA2B4;
+    }
+
+    #line-chart {
+        width:100%;
+        max-width:1000px;
+        height: 380px;
+        max-height: 380px;
     }
 
     .col-4 > div {
@@ -123,8 +151,16 @@
         color: #252733;
     }
 
+    #last-trend {
+        border: 0;
+    }
+
 
     /* tickets & tasks */
+    #tickets-tasks > div {
+        height: 336px; gap: 30px;
+    }
+
     #unresolved-tickets,
     #tasks {
         background-color: white;
@@ -278,5 +314,67 @@
 
     #default-btn {
         width: 76px;
+    }
+
+    /* filter modal */
+    .modal {
+        --bs-modal-border-color: none;
+    }
+
+    .modal-content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50%;
+    }
+
+    .modal-header {
+        border: 0;
+    }
+
+    .modal-title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0.4px;
+        text-align: left;
+        color: #252733;
+    }
+
+    #modal-cancel-btn {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: #9FA2B4;
+    }
+
+    #modal-create-btn {
+        background-color: #3751FF;
+        box-shadow: 0 5px 5px rgba(55, 81, 255, 0.2);
+
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: white;
+    }
+
+    /* filter input */
+    fieldset > div {
+        margin: 16px auto;
+    }
+
+    fieldset label {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        color: #9FA2B4;
+    }
+
+    .form-control {
+        border: 1px solid #DFE0EB;
     }
 }

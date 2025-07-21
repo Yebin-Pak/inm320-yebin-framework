@@ -78,26 +78,26 @@ let headerContent = `
                     <a class="navbar-brand" href="#">Overivew</a>
                 </div>
             
-                <ul class="nav navbar-nav d-flex flex-row align-items-center" style="height: 44px;">
+                <ul class="nav navbar-nav d-flex flex-row align-items-center">
                     <li>
                         <a href="#">
-                            <i class="fa-solid fa-magnifying-glass me-4" style="font-size: 16px;"></i>
+                            <i class="fa-solid fa-magnifying-glass me-4"></i>
                         </a>
                     </li>
                     <li>
                         <a href="#" id="notification">
-                            <i class="fa-solid fa-bell" style="font-size: 16px;"></i>
-                            <i class="fa-solid fa-circle" style="color: #3751FF; font-size: 5px; border-radius: 2.5px; outline: 1.5px solid #F7F8FC;"></i>
+                            <i class="fa-solid fa-bell"></i>
+                            <i class="fa-solid fa-circle"></i>
                         </a>
                     </li>
 
                     <div class="vl"></div>
 
                     <li id="account">
-                        <a href="#" class="d-flex flex-row align-items-center text-decoration-none" style="height: 44px;">
-                            <span id="user-name" class="me-3" style="color: #252733;">Jones Ferdinand</span>
-                            <picture class="d-flex justify-content-center align-items-center" style="width: 44px; height: 44px; border-radius: 22px; outline: 1.5px solid #DFE0EB; ">
-                                <img style="width: 40px; border-radius: 20px;" src="./assets/images/account-image.png" alt="user profile image">
+                        <a href="#" class="d-flex flex-row align-items-center text-decoration-none">
+                            <span id="user-name" class="me-3">Jones Ferdinand</span>
+                            <picture class="d-flex justify-content-center align-items-center">
+                                <img src="./assets/images/account-image.png" alt="user profile image">
                             </picture>
                         </a>
                     </li>

@@ -27,18 +27,18 @@
         </header>
 
         <!-- main -->
-        <main style="margin-left: 255px; padding: 30px; width: calc(100% - 255px);">
+        <main>
 
             <!-- all tickets -->
             <section id="all-tickets" class="d-flex flex-column justify-content-center">
-                <div id="tickets-title" class="d-flex justify-content-between align-items-center" style="height: 104px;">
+                <div id="tickets-title" class="d-flex justify-content-between align-items-center">
                     <h5>All tickets</h5>
 
                     <div class="d-flex align-items-center">
                         <i class="fa-solid fa-arrow-up-wide-short"></i>
                         <p class="m-0">Sort</p>
 
-                        <button id="filter-btn" type="button" class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#filter-modal">
+                        <button id="filter-btn" type="button" class="btn btn-primary d-flex align-items-center">
                             <i class="fa-solid fa-filter"></i>
                             <p class="m-0">Filter</p>
                         </button>
@@ -46,7 +46,7 @@
                 </div>
 
                 <div id="tickets-chart-head" class="container-fluid text-left">
-                    <div class="row" style="height: 30px;">
+                    <div class="row">
                         <div class="chart-head col-5 d-flex">Ticket details</div>
                         <div class="chart-head col-3 d-flex">Customer name</div>
                         <div class="chart-head col-2 d-flex">Date</div>
@@ -59,7 +59,7 @@
                 <table>
                     <tr>
                         <div class="tickets-list container-fluid text-left">
-                            <div class="row" style="height: 92px;">
+                            <div class="row">
                                 <div class="col-5 d-flex align-items-center">
                                     <picture>
                                         <img class="profile-picture" src="./assets/images/customers/m 5.png" alt="profile image-Cruise">
@@ -92,7 +92,7 @@
 
                     <tr>
                         <div class="tickets-list container-fluid text-left">
-                            <div class="row" style="height: 92px;">
+                            <div class="row">
                                 <div class="col-5 d-flex align-items-center">
                                     <picture>
                                         <img class="profile-picture" src="./assets/images/customers/w 5.png" alt="profile image-Damon">
@@ -125,7 +125,7 @@
 
                     <tr>
                         <div class="tickets-list container-fluid text-left">
-                            <div class="row" style="height: 92px;">
+                            <div class="row">
                                 <div class="col-5 d-flex align-items-center">
                                     <picture>
                                         <img class="profile-picture" src="./assets/images/customers/w 3.png" alt="profile image-Downey">
@@ -156,7 +156,7 @@
 
                     <tr>
                         <div class="tickets-list container-fluid text-left">
-                            <div class="row" style="height: 92px;">
+                            <div class="row">
                                 <div class="col-5 d-flex align-items-center">
                                     <picture>
                                         <img class="profile-picture" src="./assets/images/customers/m 7.png" alt="profile image-Bale">
@@ -187,7 +187,7 @@
 
                     <tr>
                         <div class="tickets-list container-fluid text-left">
-                            <div class="row" style="height: 92px;">
+                            <div class="row">
                                 <div class="col-5 d-flex align-items-center">
                                     <picture>
                                         <img class="profile-picture" src="./assets/images/customers/m 6.png" alt="profile image-Cavil">
@@ -218,7 +218,7 @@
 
                     <tr>
                         <div class="tickets-list container-fluid text-left">
-                            <div class="row" style="height: 92px;">
+                            <div class="row">
                                 <div class="col-5 d-flex align-items-center">
                                     <picture>
                                         <img class="profile-picture" src="./assets/images/customers/m 4.png" alt="profile image-Evans">
@@ -249,7 +249,7 @@
 
                     <tr>
                         <div class="tickets-list container-fluid text-left">
-                            <div class="row" style="height: 92px;">
+                            <div class="row">
                                 <div class="col-5 d-flex align-items-center">
                                     <picture>
                                         <img class="profile-picture" src="./assets/images/customers/w 6.png" alt="profile image-Smith">
@@ -280,7 +280,7 @@
 
                     <tr>
                         <div class="tickets-list container-fluid text-left">
-                            <div class="row" style="height: 92px;">
+                            <div class="row">
                                 <div class="col-5 d-flex align-items-center">
                                     <picture>
                                         <img class="profile-picture" src="./assets/images/customers/w 7.png" alt="profile image-Rogers">
@@ -310,13 +310,13 @@
                     <hr>
 
                     <tr>
-                        <div id="tickets-chart-page" class="container-fluid d-flex justify-content-end align-items-center" style="height: 72px;">
+                        <div id="tickets-chart-page" class="container-fluid d-flex justify-content-end align-items-center">
                             <nav aria-label="Page navigation" class="d-flex align-items-center">
                                 <span>Rows per page:</span>
                                 <div class="dropdown">
-                                    <button class="btn d-flex align-items-center" style="gap: 7px;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button class="btn d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <span>8</span>
-                                        <i class="fa-solid fa-caret-down" style="font-size: 12px; color: #9FA2B4;"></i>
+                                        <i class="fa-solid fa-caret-down"></i>
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">4</a></li>
@@ -328,7 +328,7 @@
                                 </div>
 
                                 <ul class="pagination d-flex align-items-center m-0 ps-4">
-                                    <span style="width: 100px; text-align: right;">1-8 of 1240</span>
+                                    <span>1-8 of 1240</span>
                                     <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-angle-left"></i></a></li>
                                     <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a></li>
                                 </ul>
@@ -336,46 +336,6 @@
                         </div>
                     </tr>
                 </table>
-            </section>
-
-            <!-- filter - modal -->
-            <section class="modal fade" id="filter-modal" tabindex="-1" aria-labelledby="filter-modal" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header" style="border: 0;">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Tickets filter</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body">
-
-                            <!-- input box -->
-                            <form action="/" method="post">
-                                <fieldset>
-                                    <div id="price-deals">
-                                        <label for="">Price & Deals</label>
-                                        <input type="text" class="form-control" aria-describedby="input-group">
-                                    </div>
-
-                                    <div id="brands">
-                                        <label for="">Brands</label>
-                                        <input type="text" class="form-control" aria-describedby="input-group">
-                                    </div>
-
-                                    <div id="reviews">
-                                        <label for="">Reviews</label>
-                                        <input type="text" class="form-control" aria-describedby="input-group">
-                                    </div>
-                                </fieldset>
-                            </form>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" id="cancel-btn" class="btn btn" data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" id="show-btn" class="btn btn" data-bs-dismiss="modal">Show results</button>
-                        </div>
-                    </div>
-                </div>
             </section>
 
         </main>

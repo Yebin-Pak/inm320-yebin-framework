@@ -47,8 +47,12 @@ window.onload = function () {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: false
-        }
+            maintainAspectRatio: false,
+            legend: {
+                display: false
+            }
+        },
+        
     });
 };
 
