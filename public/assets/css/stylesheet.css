@@ -1,52 +1,13 @@
-body {
-  background-color: #F7F8FC;
-}
-
 /* header */
 header {
-  height: 106px;
+  height: 100px;
 }
 
 /* side bar */
-#side-bar {
-  height: 100%;
-  position: fixed;
-  top: 0;
-  background-color: #363740;
-  color: #A4A6B3;
-}
-#side-bar #logo {
-  color: #A4A6B3;
-}
-#side-bar #logo span {
-  font-weight: 700;
-  font-size: 19px;
-  letter-spacing: 0.4px;
-  opacity: 0.7;
-}
-
-.nav-link {
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.2px;
-  line-height: 110%;
-  color: #A4A6B3;
-}
-
-.nav-link:hover {
-  color: #DDE2FF;
-}
-
-.active {
-  background-color: rgba(159, 162, 180, 0.08);
-  border-left: 3px solid #DDE2FF;
-  color: #DDE2FF;
-}
-
 /* nav bar */
 .navbar {
-  margin-left: 255px;
-  padding: 30px;
+  padding: 17px;
+  width: 100%;
 }
 .navbar .navbar-nav li a {
   color: #C5C7CD;
@@ -69,7 +30,7 @@ header {
 .navbar .navbar-nav .vl {
   margin: auto 32px;
   border-left: 1px solid #DDE2FF;
-  height: 32px;
+  height: 24px;
 }
 
 .navbar-brand {
@@ -78,6 +39,87 @@ header {
   line-height: 100%;
   letter-spacing: 0.3px;
   color: #252733;
+}
+
+#account {
+  display: none;
+}
+
+@media screen and (min-width: 651px) {
+  body {
+    background-color: #F7F8FC;
+  }
+  /* header */
+  header {
+    height: 106px;
+  }
+  /* side bar */
+  #side-bar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #363740;
+    color: #A4A6B3;
+  }
+  #side-bar #logo {
+    color: #A4A6B3;
+  }
+  #side-bar #logo span {
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: 0.4px;
+    opacity: 0.7;
+  }
+  .nav-link {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 110%;
+    color: #A4A6B3;
+  }
+  .nav-link:hover {
+    color: #DDE2FF;
+  }
+  .active {
+    background-color: rgba(159, 162, 180, 0.08);
+    border-left: 3px solid #DDE2FF;
+    color: #DDE2FF;
+  }
+  /* nav bar */
+  .navbar {
+    margin-left: 255px;
+    padding: 30px;
+  }
+  .navbar .navbar-nav li a {
+    color: #C5C7CD;
+  }
+  .navbar .navbar-nav li a #user-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: right;
+  }
+  .navbar .navbar-nav li #notification {
+    position: relative;
+  }
+  .navbar .navbar-nav li #notification .fa-circle {
+    position: absolute;
+    left: 10px;
+    top: 3px;
+  }
+  .navbar .navbar-nav .vl {
+    margin: auto 32px;
+    border-left: 1px solid #DDE2FF;
+    height: 32px;
+  }
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.3px;
+    color: #252733;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

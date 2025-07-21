@@ -9,63 +9,23 @@ $bg-color: #F7F8FC;
 $black: #252733;
 
 
+// mobile
 
-body {
-    background-color: $bg-color;
-}
+// mobile design
+// https://www.figma.com/design/vNzlbGpi5Ld3SgC459xpsk/Admin-Dashboard-UI-Demo-Preview--Screenshots-only---purchase-for-access-?node-id=0-1&p=f&t=5KWgv79YfXIUzrBj-0
 
-
-/* header */
+/* header */ 
 header {
-  height: 106px;
+    height: 100px;
 }
 
 /* side bar */
-#side-bar {
-    height: 100%;
-
-    position: fixed;
-    top: 0;
-
-    background-color: $dark-gray;
-    color: $gray;
-
-    #logo {
-        color: $gray;
-        
-        span {
-            font-weight: 700;
-            font-size: 19px;
-            letter-spacing: 0.4px;
-            opacity: 0.7;
-        }
-    }
-}
-
-.nav-link {
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 110%;
-
-    color: $gray;
-}
-
-.nav-link:hover {
-    color: $light-gray;
-}
-
-.active {
-    background-color: rgba(159, 162, 180, 0.08);
-    border-left: 3px solid $light-gray;
-    color: $light-gray;
-}
 
 
 /* nav bar */
 .navbar {
-    margin-left: 255px;
-    padding: 30px;
+    padding: 17px;
+    width: 100%;
 
     .navbar-nav {
         li {
@@ -96,10 +56,9 @@ header {
             margin: auto 32px;
 
             border-left: 1px solid $light-gray;
-            height: 32px;
+            height: 24px;
         }
     }
-
 }
 
 .navbar-brand {
@@ -109,4 +68,115 @@ header {
     letter-spacing: 0.3px;
 
     color: $black;
+}
+
+#account {
+    display: none;
+}
+
+
+
+// desktop
+@media screen and (min-width: 651px) {
+
+    body {
+        background-color: $bg-color;
+    }
+
+
+    /* header */
+    header {
+    height: 106px;
+    }
+
+    /* side bar */
+    #side-bar {
+        height: 100%;
+
+        position: fixed;
+        top: 0;
+
+        background-color: $dark-gray;
+        color: $gray;
+
+        #logo {
+            color: $gray;
+            
+            span {
+                font-weight: 700;
+                font-size: 19px;
+                letter-spacing: 0.4px;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .nav-link {
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        line-height: 110%;
+
+        color: $gray;
+    }
+
+    .nav-link:hover {
+        color: $light-gray;
+    }
+
+    .active {
+        background-color: rgba(159, 162, 180, 0.08);
+        border-left: 3px solid $light-gray;
+        color: $light-gray;
+    }
+
+
+    /* nav bar */
+    .navbar {
+        margin-left: 255px;
+        padding: 30px;
+
+        .navbar-nav {
+            li {
+                a {
+                    color: #C5C7CD;
+
+                    #user-name {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.2px;
+                        text-align: right;
+                    }
+                }
+
+                #notification {
+                    position: relative;
+
+                    .fa-circle {
+                        position: absolute;
+                        left: 10px;
+                        top: 3px;
+                    }
+                }
+            }
+
+            .vl {
+                margin: auto 32px;
+
+                border-left: 1px solid $light-gray;
+                height: 32px;
+            }
+        }
+
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0.3px;
+
+        color: $black;
+    }
 }

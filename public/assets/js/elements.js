@@ -93,7 +93,7 @@ let headerContent = `
 
                     <div class="vl"></div>
 
-                    <li>
+                    <li id="account">
                         <a href="#" class="d-flex flex-row align-items-center text-decoration-none" style="height: 44px;">
                             <span id="user-name" class="me-3" style="color: #252733;">Jones Ferdinand</span>
                             <picture class="d-flex justify-content-center align-items-center" style="width: 44px; height: 44px; border-radius: 22px; outline: 1.5px solid #DFE0EB; ">

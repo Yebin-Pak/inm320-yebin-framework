@@ -172,6 +172,13 @@ h5 {
     --bs-modal-border-color: none;
 }
 
+.modal-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50%;
+}
+
 .modal-title {
     font-weight: 700;
     font-size: 40px;
