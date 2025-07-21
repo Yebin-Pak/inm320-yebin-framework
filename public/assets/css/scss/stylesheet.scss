@@ -9,75 +9,47 @@ $bg-color: #F7F8FC;
 $black: #252733;
 
 
-// mobile
 
 // mobile design
 // https://www.figma.com/design/vNzlbGpi5Ld3SgC459xpsk/Admin-Dashboard-UI-Demo-Preview--Screenshots-only---purchase-for-access-?node-id=0-1&p=f&t=5KWgv79YfXIUzrBj-0
 
-/* header */ 
-header {
-    height: 100px;
-}
 
-/* side bar */
+// tablet
+@media screen and (min-width: 376px) {
+    /* header */ 
+    header {
+        height: 100px;
+    }
 
+    /* side bar */
+    #side-bar {
+        width: 70px;
 
-/* nav bar */
-.navbar {
-    padding: 17px;
-    width: 100%;
-
-    .navbar-nav {
-        li {
-            a {
-                color: #C5C7CD;
-
-                #user-name {
-                    font-weight: 600;
-                    font-size: 14px;
-                    line-height: 20px;
-                    letter-spacing: 0.2px;
-                    text-align: right;
-                }
+        #logo {
+            span {
+                display: none;
             }
-
-            #notification {
-                position: relative;
-
-                .fa-circle {
-                    position: absolute;
-                    left: 10px;
-                    top: 3px;
-                }
-            }
-        }
-
-        .vl {
-            margin: auto 32px;
-
-            border-left: 1px solid $light-gray;
-            height: 24px;
         }
     }
+
+    .nav-link {
+        span {
+            display: none;
+        }
+    }
+
+    /* nav bar */
+    
+
+    #account {
+        display: none;
+    }
 }
-
-.navbar-brand {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0.3px;
-
-    color: $black;
-}
-
-// #account {
-//     display: none;
-// }
 
 
 
 // desktop
-@media screen and (min-width: 651px) {
+@media screen and (min-width: 769px) {
 
     body {
         background-color: $bg-color;
@@ -110,6 +82,8 @@ header {
             color: $gray;
             
             span {
+                display: block;
+
                 font-weight: 700;
                 font-size: 19px;
                 letter-spacing: 0.4px;
@@ -132,6 +106,7 @@ header {
         span {
             width: 159px;
             height: 20px;
+            display: block;
         }
 
         .fa-gear,
@@ -183,6 +158,8 @@ header {
             }
 
             #account {
+                display: block;
+
                 a {
                     height: 44px;
 

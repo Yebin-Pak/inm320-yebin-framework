@@ -1,47 +1,24 @@
-/* header */
-header {
-  height: 100px;
+@media screen and (min-width: 376px) {
+  /* header */
+  header {
+    height: 100px;
+  }
+  /* side bar */
+  #side-bar {
+    width: 70px;
+  }
+  #side-bar #logo span {
+    display: none;
+  }
+  .nav-link span {
+    display: none;
+  }
+  /* nav bar */
+  #account {
+    display: none;
+  }
 }
-
-/* side bar */
-/* nav bar */
-.navbar {
-  padding: 17px;
-  width: 100%;
-}
-.navbar .navbar-nav li a {
-  color: #C5C7CD;
-}
-.navbar .navbar-nav li a #user-name {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-  text-align: right;
-}
-.navbar .navbar-nav li #notification {
-  position: relative;
-}
-.navbar .navbar-nav li #notification .fa-circle {
-  position: absolute;
-  left: 10px;
-  top: 3px;
-}
-.navbar .navbar-nav .vl {
-  margin: auto 32px;
-  border-left: 1px solid #DDE2FF;
-  height: 24px;
-}
-
-.navbar-brand {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0.3px;
-  color: #252733;
-}
-
-@media screen and (min-width: 651px) {
+@media screen and (min-width: 769px) {
   body {
     background-color: #F7F8FC;
   }
@@ -66,6 +43,7 @@ header {
     color: #A4A6B3;
   }
   #side-bar #logo span {
+    display: block;
     font-weight: 700;
     font-size: 19px;
     letter-spacing: 0.4px;
@@ -83,6 +61,7 @@ header {
   .nav-link span {
     width: 159px;
     height: 20px;
+    display: block;
   }
   .nav-link .fa-gear,
   .nav-link .fa-award {
@@ -119,6 +98,9 @@ header {
     outline: 1.5px solid #F7F8FC;
     color: #3751FF;
     font-size: 5px;
+  }
+  .navbar .navbar-nav #account {
+    display: block;
   }
   .navbar .navbar-nav #account a {
     height: 44px;

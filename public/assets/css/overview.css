@@ -72,9 +72,6 @@
 
     /* today's trend */
     #today-trend {
-        background-color: white;
-        border: 1px solid #DFE0EB;
-        border-radius: 8px;
         padding: 0;
         margin: 30px auto;
     }
@@ -84,7 +81,9 @@
     }
 
     .col-8 {
-        border-right: 1px solid #DFE0EB;
+        background-color: white;
+        border: 1px solid #DFE0EB;
+        border-radius: 8px 0 0 8px;
         padding: 32px;
     }
 
@@ -120,6 +119,13 @@
         max-width:1000px;
         height: 380px;
         max-height: 380px;
+    }
+
+    .col-4 {
+        background-color: white;
+        border: 1px solid #DFE0EB;
+        border-radius: 0 8px 8px 0;
+        padding: 32px;
     }
 
     .col-4 > div {
