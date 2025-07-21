@@ -126,3 +126,34 @@ h5 {
     font-size: 16px;
     color: #C5C7CD;
 }
+
+#tickets-chart-page {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #9FA2B4;
+}
+
+.dropdown {
+    text-align: right;
+    color: #4B506D;
+}
+
+.pagination > span {
+    margin-right: 24px;
+}
+
+.page-link {
+    border: 0;
+    color: #9FA2B4;
+}
+
+.page-link:hover {
+    color: #3751FF;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+    font-size: 20px;
+}
