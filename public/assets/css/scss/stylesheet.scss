@@ -70,9 +70,9 @@ header {
     color: $black;
 }
 
-#account {
-    display: none;
-}
+// #account {
+//     display: none;
+// }
 
 
 
@@ -89,9 +89,11 @@ header {
     height: 106px;
     }
 
+
     /* side bar */
     #side-bar {
-        height: 100%;
+        width: 255px;
+        height: 100vh;
 
         position: fixed;
         top: 0;
@@ -100,6 +102,7 @@ header {
         color: $gray;
 
         #logo {
+            height: 106px;
             color: $gray;
             
             span {
@@ -112,12 +115,29 @@ header {
     }
 
     .nav-link {
+        width: 100%;
+        height: 56px;
+
         font-weight: 400;
         font-size: 16px;
         letter-spacing: 0.2px;
         line-height: 110%;
 
         color: $gray;
+
+        i {
+            font-size: 16px;
+        }
+
+        span {
+            width: 159px;
+            height: 20px;
+        }
+
+        .fa-gear,
+        .fa-award {
+            font-size: 15px;
+        }
     }
 
     .nav-link:hover {
@@ -133,6 +153,7 @@ header {
 
     /* nav bar */
     .navbar {
+        width: calc(100% - 255px);
         margin-left: 255px;
         padding: 30px;
 
