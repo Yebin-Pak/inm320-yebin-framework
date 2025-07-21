@@ -38,8 +38,10 @@
                         <i class="fa-solid fa-arrow-up-wide-short"></i>
                         <p class="m-0">Sort</p>
 
-                        <i class="fa-solid fa-filter"></i>
-                        <p class="m-0">Filter</p>
+                        <button id="filter-btn" type="button" class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#filter-modal">
+                            <i class="fa-solid fa-filter"></i>
+                            <p class="m-0">Filter</p>
+                        </button>
                     </div>
                 </div>
 
@@ -335,6 +337,25 @@
                     </tr>
                 </table>
             </section>
+
+            <!-- filter - modal -->
+            <div class="modal fade" id="filter-modal" tabindex="-1" aria-labelledby="filter-modal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
 
         </main>
 

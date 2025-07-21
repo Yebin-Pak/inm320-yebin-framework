@@ -39,14 +39,19 @@ h5 {
 
 .fa-arrow-up-wide-short,
 .fa-filter {
-    margin-left: 34px;
     margin-right: 5px;
 
     font-size: 12px;
     color: #C5C7CD;
 }
 
-#tickets-title > div > p {
+#filter-btn {
+    margin-left: 34px;
+    background-color: transparent;
+    border: 0;
+}
+
+#tickets-title > div p {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;

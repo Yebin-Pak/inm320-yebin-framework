@@ -1,8 +1,17 @@
-body {
-    background-color: #F7F8FC;
+// typeface
+$body-font: 'muli', sans-serif;
 
-    font-family: "muli", sans-serif;
-    font-style: normal;
+// color
+$light-gray: #DDE2FF;
+$gray: #A4A6B3;
+$dark-gray: #363740;
+$bg-color: #F7F8FC;
+$black: #252733;
+
+
+
+body {
+    background-color: $bg-color;
 }
 
 
@@ -18,19 +27,19 @@ header {
     position: fixed;
     top: 0;
 
-    background-color: #363740;
-    color: #A4A6B3;
-}
+    background-color: $dark-gray;
+    color: $gray;
 
-#logo {
-    color: #A4A6B3;
-}
-
-#logo > span {
-    font-weight: 700;
-    font-size: 19px;
-    letter-spacing: 0.4px;
-    opacity: 0.7;
+    #logo {
+        color: $gray;
+        
+        span {
+            font-weight: 700;
+            font-size: 19px;
+            letter-spacing: 0.4px;
+            opacity: 0.7;
+        }
+    }
 }
 
 .nav-link {
@@ -39,17 +48,17 @@ header {
     letter-spacing: 0.2px;
     line-height: 110%;
 
-    color: #A4A6B3;
+    color: $gray;
 }
 
 .nav-link:hover {
-    color: #DDE2FF;
+    color: $light-gray;
 }
 
 .active {
     background-color: rgba(159, 162, 180, 0.08);
-    border-left: 3px solid #DDE2FF;
-    color: #DDE2FF;
+    border-left: 3px solid $light-gray;
+    color: $light-gray;
 }
 
 
@@ -57,6 +66,40 @@ header {
 .navbar {
     margin-left: 255px;
     padding: 30px;
+
+    .navbar-nav {
+        li {
+            a {
+                color: #C5C7CD;
+
+                #user-name {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.2px;
+                    text-align: right;
+                }
+            }
+
+            #notification {
+                position: relative;
+
+                .fa-circle {
+                    position: absolute;
+                    left: 10px;
+                    top: 3px;
+                }
+            }
+        }
+
+        .vl {
+            margin: auto 32px;
+
+            border-left: 1px solid $light-gray;
+            height: 32px;
+        }
+    }
+
 }
 
 .navbar-brand {
@@ -65,35 +108,5 @@ header {
     line-height: 100%;
     letter-spacing: 0.3px;
 
-    color: #252733;
-}
-
-.navbar-nav > li > a {
-    color: #C5C7CD;
-}
-
-#notification {
-    position: relative;
-}
-
-.fa-circle {
-    position: absolute;
-    left: 10px;
-    top: 3px;
-}
-
-.vl {
-    margin: auto 32px;
-
-    border-left: 1px solid #DFE0EB;
-    height: 32px;
-}
-
-#user-name {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    text-align: right;
-
+    color: $black;
 }
