@@ -28,6 +28,7 @@
     margin-left: -32px;
 }
 
+/* title */
 h5 {
     font-weight: 700;
     font-size: 19px;
@@ -67,6 +68,7 @@ h5 {
     color: #9FA2B4;
 }
 
+/* tickets list */
 .profile-picture {
     margin-right: 24px;
     border-radius: 22px;
@@ -132,6 +134,7 @@ h5 {
     color: #C5C7CD;
 }
 
+/* pagination */
 #tickets-chart-page {
     font-weight: 400;
     font-size: 14px;
@@ -151,6 +154,7 @@ h5 {
 
 .page-link {
     border: 0;
+    border-radius: 0;
     color: #9FA2B4;
 }
 
@@ -161,4 +165,55 @@ h5 {
 .fa-angle-left,
 .fa-angle-right {
     font-size: 20px;
+}
+
+/* filter modal */
+.modal {
+    --bs-modal-border-color: none;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #252733;
+}
+
+#cancel-btn {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #9FA2B4;
+}
+
+#show-btn {
+    background-color: #3751FF;
+    box-shadow: 0 5px 5px rgba(55, 81, 255, 0.2);
+
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: white;
+}
+
+/* filter input */
+fieldset > div {
+    margin: 16px auto;
+}
+
+fieldset label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #9FA2B4;
+}
+
+.form-control {
+    border: 1px solid #DFE0EB;
 }
