@@ -15,6 +15,22 @@ $black: #252733;
 
 // mobile
 
+/* header */ 
+header {
+    height: 68px;
+}
+
+/* side bar */
+#side-bar {
+    display: none;
+}
+
+
+/* nav bar */
+.navbar {
+    width: 100%;
+    padding: 18px;
+}
 
 
 
@@ -33,6 +49,9 @@ $black: #252733;
     #side-bar {
         width: 70px;
         height: 100vh;
+
+        display: flex;
+        flex-direction: column;
 
         position: fixed;
         top: 0;

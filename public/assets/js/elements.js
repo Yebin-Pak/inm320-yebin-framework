@@ -3,7 +3,7 @@
 
 let headerContent = `
             <!-- side nav bar -->
-            <aside id="side-bar" class="d-flex flex-column">
+            <aside id="side-bar">
                 <a href="/" id="logo" class="d-flex justify-content-center align-items-center mb-3 mb-md-0 text-decoration-none">
                     <svg class="bi" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="16" cy="16" r="16" fill="#3751FF"/>
