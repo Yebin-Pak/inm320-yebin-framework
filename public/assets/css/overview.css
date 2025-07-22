@@ -107,6 +107,8 @@
     }
 
     #line-chart-legend > span {
+        margin-left: 6px;
+
         font-weight: 600;
         font-size: 12px;
         line-height: 100%;
