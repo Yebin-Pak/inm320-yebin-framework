@@ -151,8 +151,7 @@ h5 {
     margin-bottom: 6px;
 
     font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 12px;
     letter-spacing: 0.3px;
     text-align: center;
     color: #9FA2B4;
@@ -162,7 +161,7 @@ h5 {
     margin: 0;
 
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 100%;
     letter-spacing: 0.3px;
     color: #252733;
@@ -451,6 +450,15 @@ fieldset label {
 
     #line-chart-legend > span {
         margin-right: 0;
+    }
+
+    .col4 > div > h4 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .col4 > div > p {
+        font-size: 24px;
     }
 }
 
