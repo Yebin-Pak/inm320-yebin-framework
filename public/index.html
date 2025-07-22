@@ -31,7 +31,7 @@
 
             <!-- statistics -->
             <section id="statistics" class="container-fluid text-center">
-                <div class="row">
+                <div class="d-flex">
                     <div class="col">
                         <h3 class="child">Unresolved</h3>
                         <p class="child">60</p>
@@ -53,10 +53,10 @@
 
             <!-- today's trend -->
             <section id="today-trend" class="container-fluid text-center">
-                <div class="row m-0 p-0">
-                    <div class="col-8 d-flex flex-column justify-content-center">
+                <div class="m-0 p-0">
+                    <div class="col8 d-flex flex-column justify-content-center">
                         <h5>Today's trends</h5>
-                        <div class="d-flex justify-content-between align-items-center mt-1">
+                        <div>
                             <p class="m-0">as of 25 May 2019, 09:41 PM</p>
                             <div id="line-chart-legend">
                                 <svg width="16" height="2">
@@ -72,7 +72,7 @@
                         </div>
                         <canvas id="line-chart" class="mt-4"></canvas>
                     </div>
-                    <div class="col-4 p-0">
+                    <div class="col4 p-0">
                         <div class="d-flex flex-column justify-content-center align-items-center">
                             <h4>Resolved</h4>
                             <p>449</p>
@@ -85,7 +85,7 @@
                             <h4>Average first response time</h4>
                             <p>33m</p>
                         </div>
-                        <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div id="last-2-trend" class="d-flex flex-column justify-content-center align-items-center">
                             <h4>Average response time</h4>
                             <p>3h 8m</p>
                         </div>
@@ -98,8 +98,8 @@
             </section>
 
             <!-- tickets & tasks -->
-            <section id="tickets-tasks" class="container-fluid mb-4">
-                <div class="row">
+            <section id="tickets-tasks" class="container-fluid mb-4 p-0">
+                <div class="d-flex">
                     <div id="unresolved-tickets" class="col">
                         <div id="tickets-title" class="d-flex flex-column">
                             <div id="title-title" class="d-flex justify-content-between">
@@ -111,7 +111,7 @@
                             </div>
                         </div>
                         
-                        <div class="tickets-content mt-3">
+                        <div class="tickets-content">
                             <p>Waiting on Feature Request</p>
                             <span>4238</span>
                         </div>
@@ -149,7 +149,7 @@
                             </div>
                         </div>
 
-                        <div class="tasks-content mt-3">
+                        <div class="tasks-content">
                             <p>Create new task</p>
                             <button type="button" id="create-btn" class="btn btn" data-bs-toggle="modal" data-bs-target="#task-modal">+</button>
                         </div>

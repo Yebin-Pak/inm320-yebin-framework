@@ -3,8 +3,8 @@
 
 let headerContent = `
             <!-- side nav bar -->
-            <aside id="side-bar">
-                <a href="/" id="logo" class="d-flex justify-content-center align-items-center mb-3 mb-md-0 text-decoration-none">
+            <aside id="side-bar" class="d-flex">
+                <a href="/" id="logo" class="mb-3 mb-md-0 text-decoration-none">
                     <svg class="bi" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="16" cy="16" r="16" fill="#3751FF"/>
                         <path d="M11 10C11 9.44772 11.4477 9 12 9H15.9905C18.2127 9 19.9333 9.60955 21.1524 10.8287C22.3841 12.0478 23 13.765 23 15.9803C23 18.2088 22.3841 19.9391 21.1524 21.1713C19.9333 22.3904 18.2127 23 15.9905 23H12C11.4477 23 11 22.5523 11 22V10Z" fill="url(#paint0_linear_584_285)"/>
@@ -17,7 +17,7 @@ let headerContent = `
                     </svg>
                     <span>Dashboard Kit</span>
                 </a>
-                <ul class="nav flex-column mb-auto">
+                <ul class="nav">
                     <li class="nav-item">
                         <a href="./index.html" class="nav-link active d-flex flex-row justify-content-center align-items-center" aria-current="page">
                             <i class="fa-solid fa-chart-pie"></i>
